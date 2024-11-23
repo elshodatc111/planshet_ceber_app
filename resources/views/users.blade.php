@@ -12,15 +12,15 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <table class="table text-center datatable" srtle="font-size:12px;">
+                    <table class="table text-center" srtle="font-size:12px;">
                         <thead class="text-center">
                             <tr>
                                 <th class="text-center">#</th>
                                 <th class="text-center">FIO</th>
                                 <th class="text-center">Lovozim</th>
                                 <th class="text-center">Email</th>
-                                <th class="text-center">Create</th>
-                                <th class="text-center">Create</th>
+                                <th class="text-center">Yaratilgan vaqti</th>
+                                <th class="text-center"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,7 +35,7 @@
                                     <form action="{{ route('user_del',$item['id']) }}" method="post">
                                         @csrf 
                                         @method('delete')
-                                        <button class="btn btn-danger p-0 m-0 px-1">delete</button>
+                                        <button class="btn btn-danger p-0 m-0 px-1">o'chirish</button>
                                     </form>
                                 </td>
                             </tr>

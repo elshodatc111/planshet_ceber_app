@@ -8,6 +8,7 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <div id="app">
@@ -27,14 +28,14 @@
                     @else
                         @if(auth()->user()->type=='admin')
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home_create') }}" style="font-weight:700">Yangi Post</a>
+                            <a class="nav-link" href="{{ route('home_create') }}" style="font-weight:700">Yangi Diagramma</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('users') }}" style="font-weight:700">Hodimlar</a>
                         </li>
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('profel') }}" style="font-weight:700">Profel</a>
+                            <a class="nav-link" href="{{ route('profel') }}" style="font-weight:700">Profil</a>
                         </li>
                     @endguest
                     </ul>

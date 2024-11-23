@@ -5,7 +5,7 @@
     <div class="container">
         <div class="justify-content-center">
             <div class="card">
-                <div class="card-header">Yangi post</div>
+                <div class="card-header">Yangi Diagramma</div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
@@ -14,12 +14,12 @@
                     @endif
                     <form action="{{ route('home_create_post') }}" method="post">
                         @csrf 
-                        <label for="name">Post nomi</label>
+                        <label for="name">Diagramma nomi</label>
                         <input type="text" name="name" required class="form-control">
-                        <label for="json">Post uchun JSON</label>
+                        <label for="json">Diagramma uchun JSON</label>
                         <textarea name="json" class="form-control"></textarea>
                         <div class="w-100 text-center">
-                            <button class="btn btn-primary w-50 mt-3">Postni saqlash</button>
+                            <button class="btn btn-primary w-50 mt-3">Diagrammani saqlash</button>
                         </div>
                     </form>
                 </div>
